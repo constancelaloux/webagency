@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" href="images/favicon.png" />
+	    <link rel="stylesheet" type="text/css" href="style.css"/>
+	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
+		<script src="style.js"></script>
+	    <title>sitewebagency</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+
+	<body>
+<!-- HEADER-->
+		<header>
+				<!-- logo + menu -->
+			<div class="header">
+				<div class="header_container">
+					<div class="logo">
+						<img src="images/logo.png" alt="logo">
+					</div>
+
+
+		   			<nav>
+						<ul id="menu_horizontal">
+							<li id="menu_accueil">
+								<a href="#accueil">Accueil</a>
+							</li>
+							<li><a href="#ancre_services">Services</a></li>
+							<li><a href="#ancre_projets">Portfolio</a></li>
+							<li><a href="#ancre_contact">Contact</a></li>
+		       			</ul>
+		    		</nav>
+				</div>
+			</div>
+
+			<!-- Title + Buton "plus d'infos" -->
+			<article id="accueil">
+				<div class="slider_container">
+					<aside id="title">
+						<h1> 
+							<span>WEBAGENCY</span> 
+						: L'AGENCE DE TOUS VOS PROJETS !
+						</h1>
+
+						<h2>Vous avez un projet web ? La WebAgency vous aide à le réaliser !
+						</h2>
+
+							<button type="button" value="infos">Plus d'infos
+							</button>
+					</aside>
+
+			<!-- Slider-->
+					<div class="slider">
+						<img class="mySlides" alt="slideun" src="images/slider/slideun.jpg" style="width:100%">
+
+							<img class="mySlides" alt="slidedeux" src="images/slider/slidedeux.jpg" style="width:100%">
+
+							<div id="sliderbutton">
+								<div class="left">
+				 				<div class="buttonleft" onclick="plusDivs(-1)"><i class="fas fa-angle-left"></i></div>
+				 			</div>
+				 			<div class="right">
+								<div class="buttonright" onclick="plusDivs(+1)"><i class="fas fa-angle-right"></i></div>
+							</div>
+						</div>
+				
+					</div>
+				</div>
+			</article>
+		<!-- on inclut la bibliothèque depuis les serveurs de Google -->
+		</header>
+<!-- HEADER END-->
+
+
+<!-- OUR SERVICES-->
+		<section id="section_services">
+			<!--<div class="block">-->
+			<div id="ancre_services"></div>
+			<!-- <div id="our_services"> -->
+				<article class="grid-container_services">
+
+			<!-- Title + text -->
+					<div id="container_services"> 
+						<header class="services"> 
+							<h3>NOS SERVICES</h3>
+						</header> 
+						<div class="rond">
+							<i></i>
+						</div>
+						<div class="editer">
+							<p>Notre agence développe des sites internet, de la maquette à la mise en ligne et au référencement du site. Connectez-vous et laissez nos développements servir le vôtre...vos idées et les nôtres! </p> 
+						</div> 
+					</div>
+				</article>
+			<!-- Img -->
+			<div class="grid-container_images">
+				<aside class="grid-item1"> 
+					<img src="images/mainfeature.png" alt="mainfeature.png">
+				</aside>
+		<!-- text -->
+
+				<article class="grid-item_fa"> 
+					<ul class="list">
+
+						<li class="item">
+							<div class="fasfa">
+								<i class="fas fa-cubes fa-2x"></i>
+								<div class="bluecircle">
+								</div>
+							</div>
+							<div class="text">
+								<h3>UX design</h3>
+								<p>Nous prenons en compte les attentes de vos internautes afin que leurs actions puissent etre concrétisés dans un environnement agréable, fluide et rassurant.</p>
+							 	</div>
+						</li>
+						<li class="item">
+							<div class="fasfa">
+								<i class="fas fa-chart-pie fa-2x"></i>
+								<div class="bluecircle">
+								</div>
+							</div>
+							<div class="text">
+								<h3>UI design</h3>
+								<p>Nous nous engageons à fournir une experience agréable pour l'internaute avec un site web facile à prendre en main, accessible, crédible et efficace. </p>
+							</div>
+						</li>
+
+						<li class="item">
+							<div class="fasfa">
+								<i class="fas fa-chart-line fa-2x"></i>
+								<div class="bluecircle">
+								</div>
+							</div>
+							<div class="text">
+								<h3>SEO</h3>
+								<p> Nos experts en référencement naturel vous accompagnent sur le long terme afin que votre site tire parti d’un positionnement idéal.</p> 
+							</div>
+						</li>
+						
+					</ul>
+				</article>
+			</div>
+		</section>
+<!-- OUR SERVICES end-->
+
+
+
+<!-- OUR PROJECTS -->
+		<section id="projects">
+			<div id="ancre_projets"></div>
+			<article class="grid-container11">
+
+
+		<!-- Title + text -->
+				<article class="grid-container3">
+						<header class="grid-item3">  
+							<h3>NOS PROJETS</h3> 
+						</header>
+						<div class="rond">
+						<i></i>
+					</div>
+						<div class="grid-item3">
+							<p>Voici un apercu des projets que vous avons réalisés</p> 
+						</div>
+				</article>
+		<!-- end Title + text -->
+		<!-- Menu 2 -->
+				<nav class="nav_container">
+					<ul id="navigation">
+						<li id="worksleft"><a href="#works">All Works </a></li>
+
+						<li><a href="#creative">Creative </a> </li>
+
+						<li><a href="#corporate">Corporate </a></li>
+
+						<li id="worksright"><a href="#portfolio">Portfolio </a> </li>
+					</ul>
+				</nav>
+		<!--</end Menu 2>-->
+
+		<!-- Img -->
+				<article class="grid-container">
+			<!-- Img 1 -->
+					<div class="grid-item"> 
+						<figure class="test"> 
+							<img src="images/portfolio/un.jpg"> 
+							<figcaption class="texte"> 
+								<h3>France Optic</h3>
+								<p>Site de la franchise </p>
+								<span class="fa-stack"> 
+									<i class="fa fa-eye fa-stack-1x"></i>
+								</span>
+							</figcaption> 
+						</figure> 
+					</div>
+
+			<!-- Img 2 -->
+					<div class="grid-item"> 
+						<figure class="test"> 
+							<img src="images/portfolio/deux.jpg">
+							<figcaption class="texte">
+								<h3>Kdoshop</h3>
+								<p>Vente de cadeaux </p>
+								<span class="fa-stack"> 
+									<i class="fa fa-eye fa-stack-1x"></i>
+								</span>
+							</figcaption> 
+						</figure> 
+					</div>
+
+			<!-- Img 3 -->
+					<div class="grid-item"> 
+						<figure class="test">
+							<img src="images/portfolio/trois.jpg"> 
+							<figcaption class="texte"> 
+								<h3>Pompadour</h3> 
+								<p>Site web du château </p>
+								<span class="fa-stack"> 
+									<i class="fa fa-eye fa-stack-1x"></i>
+								</span>
+							</figcaption> 
+						</figure> 
+					</div>
+		<!-- Img 4 -->
+					<div class="grid-item"> 
+						<figure class="test"> 
+							<img src="images/portfolio/quatre.jpg" alt="quatre">
+							<figcaption class="texte">
+								<h3>Hubert Architecture</h3>
+								<p>Site de l'architecte </p>
+								<span class="fa-stack"> 
+									<i class="fa fa-eye fa-stack-1x"></i>
+								</span>
+							</figcaption> 
+						</figure> 
+					</div>
+
+		<!-- Img 5 -->
+					<div class="grid-item">
+						<figure class="test">
+							<img src="images/portfolio/cinq.jpg" alt="cinq">
+							<figcaption class="texte">
+								<h3>Shopping.net</h3>
+								<p>Boutique de mode </p>
+								<span class="fa-stack">
+									<i class="fa fa-eye fa-stack-1x"></i>
+								</span>
+							</figcaption> 
+						</figure> 
+					</div>
+
+		<!-- Img 6 -->
+					<div class="grid-item">
+						<figure class="test">
+							<img src="images/portfolio/six.jpg" alt="six">
+							<figcaption class="texte">
+								<h3>Travelcity</h3>
+								<p>Agence de voyage </p>
+								<span class="fa-stack">
+									<i class="fa fa-eye fa-stack-1x"></i>
+								</span>
+							</figcaption>
+						</figure> 
+					</div>
+
+		<!-- Img 7 -->
+					<div class="grid-item">
+						<figure class="test">
+							<img src="images/portfolio/sept.jpg" alt="sept">
+							<figcaption class="texte">
+								<h3>Pintura</h3>
+								<p>Vente d'objets d'art </p>
+								<span class="fa-stack">
+									<i class="fa fa-eye fa-stack-1x"></i>
+								</span>
+							</figcaption>
+						</figure>
+					</div>
+
+		<!-- Img 8 -->
+					<div class="grid-item">
+						<figure class="test">
+							<img src="images/portfolio/huit.jpg" alt="huit">
+							<figcaption class="texte">
+								<h3>Be theme</h3>
+								<p>Site de la marque </p>
+								<span class="fa-stack">
+									<i class="fa fa-eye fa-stack-1x"></i>
+								</span>
+							</figcaption>
+						</figure>
+					</div>
+
+				</article>
+
+			</article>
+		</section>
+
+<!-- Our projects end-->
+
+
+
+<!-- Map -->
+
+	<!--  contact form-->
+		<section id="contactform">
+			<div id="ancre_contact"></div>
+			<aside id="contact">
+				<form>
+					<h3> Contact Info </h3>
+
+					<h4> WebAgency SAS </h4>
+					<p>	25 rue d'Hauteville 75010 Paris
+					<br>
+					Tél: 01 02 03 04 05
+					</p>
+					
+					<p>
+						<input class="text" type="text" name="name" placeholder="Name">
+
+						<input class="text" type="text" name="email" placeholder="Email"> 
+
+						<input class="text" type="text" name="subject" placeholder="Subject">
+
+						<textarea id="textarea" class="form-control" placeholder="Message"></textarea> 
+						
+						<input type="submit" value="Send Message">
+						</p>
+				</form>
+			</aside>
+
+			<div id="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83975.12707491218!2d2.2797857535526895!3d48.873030590678454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sen!2sfr!4v1524069732985" style="border:0" allowfullscreen>
+				</iframe>
+			</div>
+		</section>
+
+
+	<!-- fin contact form -->
+<!-- End Map -->
+
+<!--Footer-->
+		<footer>
+			<article class="footer">
+				
+			</article>
+		</footer>	
+<!-- End Footer-->	
+
+	</body>
+</html>

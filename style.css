@@ -1,0 +1,1161 @@
+/* Block*/
+
+ /*On enléve la marge de 8px du body*/
+  body 
+  {
+    margin: 0px 0px;
+  }
+  
+
+/*Police*/
+  #menu_horizontal 
+  {
+
+    list-style-type: none; /*enlever les puces*/
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.0em;
+  }
+
+  h1 
+  {
+  	font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 1.8em;
+  }
+
+  #title h2 
+  {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.0em;
+  }
+
+  button
+  {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.3em;
+  }
+
+  h3 
+  {
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 1.2em;
+  }
+
+  p 
+  {
+  	font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.0em;
+    color: #7b7b7b; /*couleur grise*/
+  }
+
+  .texte p {
+  	color: white;
+  }
+
+  .nav_container #navigation li 
+  {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.0em;
+  }
+
+
+  h4 
+  {
+  	font-family: 'Roboto';
+    font-weight: 900;
+    color: #7b7b7b;
+  }
+
+  input[type="submit"] 
+  {
+  	font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.0em;
+  }
+
+  input.text {
+    font-family: 'Roboto'; 
+    font-weight: 300;
+    font-size: 0.8em;
+  }
+
+  #textarea 
+  {
+    font-family: 'Roboto'; 
+    font-weight: 300;
+    font-size: 0.8em;
+  }
+/*Fin police*/
+
+
+
+/* HEADER */
+
+  /* MENU */
+
+  /* Enlever les puces */
+
+  /*enlever le soulignage, mettre en noir et marges*/
+  #menu_horizontal li a 
+  {
+    color: #7b7b7b; /*couleur du menu en gris*/
+    text-decoration: none; /*enlever le soulignage*/
+    padding: 30px 15px 15px 15px; /*marge pour le trait au dessus de 30 et marge entre les mots de 15*/
+  }
+
+  /* Mettre le menu en horizontal */	
+  header nav ul 
+  {
+    display: flex; /*Le menu est flex*/
+  }
+  /*mettre une bordure en haut sur le menu*/
+  ul#menu_horizontal a:hover 
+  {
+    border-top: solid #4eb1d5;
+  }
+
+  /*END MENU*/
+
+  /*MENU AND ICON*/
+  /* Agencer les elements Menu et icone */
+
+  .header 
+  {
+  	width:100%; /*prend toute la largeur*/
+  	position: fixed; /*la barre du haut est fixe*/
+  	z-index: 2; /* elle apparait au dessus des autres elements de la page*/
+  	top: 0px; /*reste en haut*/
+  	display:flex;/*elle est flex*/
+  	margin: auto;
+  	background-color: white; /*couleur de fond blanche*/
+  	height:110px; /*sa hauteur*/
+  }
+
+  header .header_container 
+  {
+    display: flex; /*Le header est flex*/
+    justify-content: space-between; /*Espace entre le logo et le menu*/
+    align-items: center;
+  }
+
+  .header_container 
+  {
+    width: 1500px; /*On donne une largeur au container*/
+    margin: auto; /*Marges gauche/droite*/
+  }
+
+  /*END MENU AND ICON*/
+
+  /* SLIDER */
+  #accueil 
+  {
+  	padding-top: 100px; /*placer le container en dessous de la barre de menu*/
+  }
+  .slider_container 
+  {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 20%;
+  }
+
+  #sliderbutton 
+  {
+    position: relative;
+    padding-top: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .left 
+  {
+    border-radius: 0px 30px 30px 0px; /*arrondis à droite*/
+    height: 60px;
+    width: 40px;
+    position: relative;
+    z-index: 1;
+    background-color: #414246;
+    opacity: 0.5;
+  }
+
+  .right 
+  {
+    height: 60px;
+    width: 40px;
+    border-radius: 30px 0 0 30px; /*arrondis à gauche*/
+	position: relative;
+    right: 0px; 
+    background-color: #414246;
+    opacity: 0.5;
+    display: inline-flex;
+    flex-direction: row;
+  }
+
+  .buttonleft 
+  {
+    position: relative;
+    top: 25%;
+    color: white;
+    font-size: 30px;
+  }
+
+  .buttonright 
+  {
+    position: relative;
+    left: 25px;
+    top: 25%;
+    color: white;
+    font-size: 30px;
+  }
+
+  .slider 
+  {
+	position: relative;
+  }
+
+  .mySlides 
+  {
+    position: absolute; /*relative*/
+  }
+
+  /* END SLIDER */
+
+  /* TITLE and PRESENTATION */
+ 
+
+  /* Le bouton */
+  #title button 
+  {
+    background-color:#4eb1d5;  /*fond bleu*/
+    width: 140px; /* Largeur du bouton */
+    text-decoration: none; /*enlever le soulignage*/
+    border: 2px solid #4eb1d5; /*#3491b2*/
+    border-bottom: 2px solid #0678a0;
+    text-decoration: none; /*enlever le soulignage*/
+    color: white; /*couleur blanche*/
+    border-radius: 4px 4px; /* radius autour du bouton*/
+    height: 45px;
+  }
+
+  /* Texte */
+  #title h2 
+  {
+    color: white; /* Couleur blanche */
+  }
+
+  #title h1 
+  {
+    color: white;
+  }
+
+  #title h1 span 
+  {
+    color: #4eb1d5; 
+  }
+
+   /* Le titre le texte le bouton sont flex et en colonne*/
+  #title 
+  {
+    display: flex; 
+    flex-direction: column;
+    position : absolute; /* Position : enfant */
+    z-index: 1; /* Passe sur l'image */
+    margin-top: 10%;
+    width: 40%;
+    padding-left: 14%;
+  }
+
+  section#section_services 
+  {
+  	margin: 20px; /* le block qui contient tous les elements a une marge de 20px*/
+  }
+  /* END TITLE and PRESENTATION */
+
+/* HEADER END*/
+
+
+
+/* OUR SERVICES */
+
+  #container_services 
+  {
+    display: flex;
+    flex-direction:column;
+  }
+
+  .services 
+  {
+    display: flex;
+    justify-content: center;
+  }
+
+  .editer p 
+  {
+    text-align: center;
+  }
+  /* Rond avec les lignes autour */
+  .rond 
+  {
+    display: flex;
+    width: 14px;
+    height: 14px;
+    margin: auto;
+    background: #4eb1d5; 
+    border-radius: 50%;
+    position: relative;
+    border: solid 3px white; /*contour du rond en blanc*/
+  }
+
+  .rond i {
+    margin-top: 7px;
+  }
+  .rond i::before,
+  .rond i::after 
+  {
+    content:"";
+    height: 1px;
+    display: block;
+    position: absolute;
+  }
+
+  .rond i::after 
+  {
+ 
+    border-right: solid 100px #7b7b7b;
+    right: 160%;
+  }
+
+  .rond i::before 
+  {
+    border-left: solid 100px #7b7b7b;
+    left: 160%;
+  }
+
+  /* fin Rond avec les lignes autour */
+
+  .editer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .editer p {
+  width: 50%;
+  }
+
+  /*image et texte */
+  .grid-container_images
+  {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+ 
+  .grid-item_fa 
+  {
+    justify-content: center;
+    display: grid;
+  }
+
+  .grid-item1
+  { display: inline-grid;
+    justify-content: center;
+  }
+  /* fin image et texte
+
+  * logo et texte*/
+  li.item
+  {
+    position: relative; /* la liste est dans le flux*/
+    list-style-type: none; /*enlever les puces*/
+    display: flex;
+    align-items: center;
+  }
+  
+  .fasfa 
+  {
+    position: relative; /*absolute sort du flux*/
+    /*text-align: center;*/ /*Aligner au centre*/
+    margin-right: 25px;
+  }
+  /*cercle bleu*/
+  .bluecircle 
+  {
+    position: absolute; /* sort du flux*/
+    height: 15px; /*taille du cercle*/
+    width: 15px; /*hauteur du cercle*/
+    border-radius: 100%; /*donne de la rondeur*/
+    background-color: #4eb1d5;  /* couleur */
+    right: -8px;
+    top: 22px;
+  }
+  /*cercle gris + logo*/
+  .fa-cubes, .fa-chart-pie, .fa-chart-line
+  {
+    color: #4eb1d5;  /* couleur bleu */
+    font-size: 40px;
+    border-radius: 50%;
+    border: #e5e5e5 solid 2px;
+    padding: 10px;
+   }
+
+  .text p::before 
+  {
+   	content:"";
+  }
+
+  .services h1 
+  {
+    color: black;
+  }
+
+  a:-webkit-any-link 
+  {
+  text-decoration: none;
+  }
+
+  /*fin logo et texte*/
+
+  /*grid-container_services*/
+
+  #ancre_services
+  {
+    position: relative;
+    bottom: 120px;
+  }
+
+/*OUR SERVICES END*/
+
+
+
+/*OUR PROJECTS*/
+
+	/*Titre et rond bleu avec traits*/
+  .grid-container3 
+  {
+    display: grid;
+    grid-template-columns: auto;
+  } 
+  .grid-item3 
+  {
+    display: grid;
+    justify-content: center;
+  }
+
+  /*Fin titre et rond bleu avec traits*/
+
+  /* MENU 2 */
+  ul#navigation 
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 0px;
+  } 
+
+  ul#navigation li
+  {
+    list-style-type: none;
+    position: relative;
+  } 
+
+  ul#navigation li a 
+  {
+  	color: #7b7b7b;
+    border: 0px solid rgba(0);
+    background-color: #dddddd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    padding-left: 10px;
+    padding-right:10px;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+  }
+
+  ul#navigation a:hover 
+  {
+    background-color: #4eb1d5; 
+    color: white; 
+    border-bottom: 2px solid #0678a0;
+  }
+
+  /* triangle en dessous des boutons du menu*/
+
+  ul#navigation a:hover:after 
+  {
+    position: absolute;
+    content:''; /* la triangle s'affiche au survol de la souris*/
+    border-style: solid;
+    border-width: 10px 7px 0 7px;
+    border-color: #0678a0 transparent;/*#3491b2 transparent*/
+    bottom: -0.6rem; /*le triangle remonte*/
+    left:40%; /*marge à gauche pour centrer le triangle*/
+  }
+
+  #navigation #worksleft a
+  {
+    border-radius: 5px 0px 0px 5px;
+  }
+
+   #navigation #worksright a
+  {
+    border-radius: 0px 5px 5px 0px;
+  }
+
+
+  /* FIN MENU 2 */
+
+  /* infos du container*/
+  .grid-container 
+  {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+  } 
+
+  .grid-item img 
+  {
+    display: inline-grid;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /*Positionner le texte sur l'image*/
+
+  .test:hover .texte 
+  {
+    display:block;
+    height:85px;
+    bottom: 4px;
+    opacity: 1;
+  }
+
+  .texte 
+  {
+    display:block; /* ne s'affiche pas*/
+    position: absolute; /* sort du flux*/
+    background-color: rgba(77, 77, 77, 0.5); /*couleur transparente*/
+    bottom: -14px; /*remonte le texte sur l'image au lieu de en dessous*/
+    width: 100%; /* prend la largeur de l'image*/
+    height: 0px; 
+    /*rajout pour la transition*/
+    transition-timing-function: ease;
+    transition-property: height;
+    transition-duration: 3s;
+    opacity: 0;
+  }
+
+  .test 
+  {
+    position: relative; /*l'image est dans le flux*/
+    margin-left: 10px;
+    margin-right: 10px;
+    /*rajout pour la transition*/
+    overflow: hidden;
+  }
+
+  figcaption.texte
+  {
+    color: white; /*couleur du texte en blanc*/
+  }
+
+  .texte h3 
+  {
+    padding-left: 10px;
+  }
+
+  .texte p 
+  {
+  	padding-left: 10px;
+  }
+
+  .fa-stack 
+  {
+    position: relative;
+    display: inline-block;
+    width: 2em; /*largeur du fond*/
+    height: 2em;/*hauteur du fond*/
+    left: 75%; /* décaler l'icone sur la droite*/
+    bottom: 100px; /* décaler l'image vers le haut*/
+    color: white; /*couleur blanche*:*/
+    background-color: #4eb1d5;  /*fond bleu*/
+    border-radius: 100%; /*arrondir l'angle du fond bleu*/
+    border: 1px solid white; /*contour blanc de l'icone*/
+  }
+
+  .list 
+  {
+    padding-left: 0px;
+  }
+
+  /*Fin positionner le texte sur l'image*/
+
+  /* Fond Nos projets */
+  #projects 
+  {
+    background-color: #f9f8f8;
+  }
+
+  #ancre_projets
+  {
+    position: relative;
+    bottom: 125px;
+  }
+
+  figcaption.texte 
+  {
+    font-size: 0.9em; /*diminuer la taille du texte*/
+  }
+  /*Fin GRID Les images*/
+
+/*END OUR PROJECTS*/
+
+
+
+
+
+
+
+
+
+
+
+/* MAP */
+
+  #ancre_contact
+  {
+    position: relative;
+    bottom: 125px;
+  }
+
+  input.text 
+  {
+    border-radius: 4px 4px;
+    height: 25px;
+    border: 1px solid #d2d1d1;
+  }
+  
+  input[type="submit"] 
+  {
+    background-color:#4eb1d5;  /*couleur bleu du fond du bouton*/
+    color: white; /*couleur du texte du bouton*/
+    width:120px; /*largeur du bouton*/
+    border-bottom: 2px solid #0678a0;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-top: 2px solid transparent;
+    border-radius: 4px 4px;
+    height: 45px;
+  }
+
+ 	#textarea 
+ 	{
+ 		margin-bottom: 10px;
+	}
+
+	.text 
+	{
+		margin-bottom: 10px;
+	}
+
+  #contact p 
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  /* Titre webagency sas*/
+  #contact form h2 
+  {
+    font-size: 1em;
+  }
+
+  #contact 
+  {
+    background-color: rgba(245,245,245,0.9); *//*couleur transparente*/
+    width: 250px; /*largeur du fond*/
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 65%;
+    position: absolute;
+    z-index:1;
+    margin-top: 70px;
+  }
+
+  #map iframe 
+  {
+    position: relative;
+    opacity: 0.8;
+    width: 100%;
+    height:600px;
+  }
+
+  #map 
+  {
+    background-color: rgb(0,150,250);
+  } 
+
+  #contactform 
+  {
+    padding-top: 5%;
+    padding-bottom: 1%;
+  }
+
+  textarea#textarea 
+  {
+    height: 130px;
+    border-radius: 4px 4px 4px 4px;
+    border: 1px solid #d2d1d1;
+  }
+
+  h4
+  {
+  	margin-bottom: -15px;
+  }
+
+/*MAP END*/
+
+
+/* FOOTER */
+  .footer 
+  {
+  	width: 100%;
+  	height: 20px;
+  }
+/*FOOTER END*/
+
+ 
+
+/*MEDIAS QUERIES*/    /*texte slider à retravailler*/
+
+@media (max-width: 275px) 
+{
+  .logo img {
+    zoom: 0.7;
+  }
+
+  .rond i::before 
+  {
+    border-left: solid 70px #7b7b7b;
+  }
+
+  .rond i::after
+  {
+    border-right: solid 70px #7b7b7b;
+  }
+}
+
+@media (max-width: 335px) 
+{
+  .slider_container {
+ 	  display: none;
+  }
+
+  #our_services {
+ 	  padding-top: 0px;
+  }
+
+  #menu_accueil a {
+ 	  display: none;
+  }
+}
+
+
+/* Tiny Devices: Phones */
+@media (max-width: 600px) 
+{
+  /*la barre de menu se met en column*/
+  header .header_container 
+  {
+    flex-direction: column;
+  }
+
+  /*le menu se met en column*/
+  #menu_horizontal 
+  {
+    flex-direction: column;
+    padding-left: 0px
+  }
+
+  /*la barre de menu n'a plus de largeur fixe*/
+  .header_container /*a voir si enlever*/
+  {
+    width: 0px;
+  }
+
+  /*la barre quit contient la barre de menu*/
+  .header 
+  {
+    position: relative; /*le menu ne suit plus dans la page*/
+    height: 270px; /*hauteur*/
+    background-color: #f9f8f8; /*couleur de fond*/
+  }
+  
+  /*le hover se trouve sur le menu*/
+  ul#menu_horizontal a:hover 
+  {
+    background-color: #4eb1d5; 
+    color: white;
+    border-top: none;
+  }
+
+  /*Le menu a un padding de 10px tout autour*/
+  #menu_horizontal li a 
+  {
+    padding: 10px 10px 10px 10px;
+  }
+
+  /*Les éléments sont flex et centrés*/
+  #menu_horizontal li 
+  {
+    justify-content: center;
+    display: flex;
+  }
+
+  ul#navigation li a
+  {
+    border-bottom: none;
+  }
+  ul#navigation a:hover 
+  {
+    border-bottom: none;
+  }
+  ul#navigation a:hover:after 
+  {
+    display: none;
+  }
+
+  /*l'image d'orinateur et le texte se mettent sur 1colonne et 2lignes*/ 
+  .grid-container_images
+  {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+
+  /*Marge du haut avec le menu qui passe à 10%*/
+  #accueil 
+  {
+    padding-top: 0px; /*La marge entre la barre du menu et le slider n'existe plus*/
+  }
+
+  #sliderbutton {
+  	padding-top: 10%;
+  }
+
+  .editer p 
+  {
+    width: 100%; 
+  }
+
+  #title h2 
+  {
+    display: none
+  }
+
+    /*le formulaire de contact passe de absolute à relative*/
+  #contact 
+  {
+  	position: relative;
+  	margin-left: 0%;
+  }
+
+  /*Le bouton s'ajuste en taille*/
+  input[type="submit"]
+  {
+    width: 190px; 
+  }
+
+  /*Les images se mettent 1par colonne*/
+  .grid-container 
+  {
+    grid-template-columns: auto;
+  }
+
+    /*Le menu se met en column et à 50% de largeur*/
+  ul#navigation 
+  {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav_container 
+  {
+    display: flex;
+    justify-content: center;
+  }
+
+  .grid-item1 img
+  {
+  	width: 100%;
+  }
+
+  .text h3 
+  {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  .text p 
+  {
+    text-align: center;
+  }
+
+  li.item 
+  {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #title button 
+  {
+  	width: 100px;
+  }
+
+  #ancre_projets 
+  {
+    position: relative;
+    bottom: 0px;
+  }
+
+  #ancre_contact 
+  {
+    position: relative;
+    bottom: 0px;
+  }
+
+  .slider_container 
+  {
+    margin-bottom: 15%;
+  }
+
+  #our_services 
+  {
+    padding-top: 0px;
+  }
+
+  #ancre_services 
+  {
+    position: relative;
+    bottom: 0px;
+  }
+
+  .fasfa {
+  	margin-right: 0px;
+  }
+
+  #title button
+  {
+   	 height: 25px;  
+  }
+
+  figcaption.texte 
+  {
+    font-size: 0.7em;
+  }
+
+  #menu_horizontal 
+  {
+   	font-size: 1.3em;
+   }
+
+  .services h3
+  {
+   	font-size: 1.5em;
+   }
+
+  .editer p 
+  {
+   	font-size: 1.3em;
+  }
+
+   .text h3 
+   {
+   	font-size: 1.5em;
+   }
+
+    .text p {
+   	font-size: 1.3em;
+   }
+
+   .grid-item3 h3 {
+   	font-size: 1.5em;
+   }
+
+   .grid-item3 p {
+   	font-size: 1.3em;
+   	text-align: center;
+   }
+
+   #navigation li a {
+   	font-size: 1.3em;
+   }
+
+   .texte h3 {
+   	font-size: 1.5em;  	
+   }
+
+    .texte p {
+   	 font-size: 1.3em;  	
+   }
+
+   #contact h3 {
+   	font-size: 1.5em;
+   }
+
+   #contact h4 {
+   	 font-size: 1.3em;  
+   }
+
+   #contact p {
+   	 font-size: 1.3em;  
+   }
+
+   input.text {
+   	 font-size: 1.1em;  
+   }
+
+   textarea#textarea {
+   	 font-size: 1.1em;  
+   }
+
+   input[type="submit"]
+   {
+   	 font-size: 1.1em;  
+   }
+
+   #title button
+   {
+   	 font-size: 0.8em; 
+   }
+
+     #title h1 
+  {
+   font-size: 0.8em;
+  }
+
+   #contactform {
+   	padding-top: 0px;
+   }
+
+   #title {
+    margin-top: 7%;
+   }
+
+   #navigation #worksright a {
+    border-radius: 0px 0px 5px 5px;
+}
+
+#navigation #worksleft a {
+    border-radius: 5px 5px 0px 0px;
+}
+  }
+
+
+
+
+   @media (min-width: 601px) and (max-width: 790px) 
+  {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  #title h2 {
+  	display: none;
+  }
+
+  }
+
+  @media (min-width: 601px) and (max-width: 900px) 
+  {
+  /*la barre de menu se met en column*/
+  header .header_container 
+  {
+    flex-direction: column;
+  }
+
+  /*le hover se met sur le menu et le border bleu s'enléve*/
+  ul#menu_horizontal a:hover 
+  {
+    background-color: #4eb1d5; 
+    color: white;
+    border-top: none;
+  }
+
+  /*Le menu s'ajuste en taille*/
+  #menu_horizontal li a {
+    padding: 10px 10px 10px 10px;
+  }
+
+  /*l'image d'orinateur et le texte se mettent sur 1colonne et 2lignes*/ 
+  .grid-container_images
+  {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+
+  /*le formulaire de contact passe de absolute à relative*/
+  #contact 
+  {
+  	position: relative;
+  	margin-left: 0%;
+  }
+
+  /*Le bouton s'ajuste en taille*/
+    input[type="submit"]{
+    width: 20%;
+  }
+
+  /*le paragraphe se met sur toute la largeur il passe de 50% à 100%*/
+  .editer p {
+    width: 100%;
+  }
+
+#title
+{
+      font-size: 0.7em;
+}
+  /*texte slider*/
+  }
+
+
+
+
+   @media (min-width: 901px) and (max-width: 1200px) 
+ {
+  /*la barre de menu se réduit*/
+  .header_container {
+    max-width: 650px;
+  }
+
+  #contact {
+      width: 270px;
+ }
+ }
+
+
+
+    @media (min-width: 1201px)  
+ {
+  /*la barre de menu se réduit*/
+  .header_container {
+    max-width: 1000px;
+  }
+ #contact {
+      width: 270px;
+    }
+
+  #contact {
+    margin-left:70%;
+  }
+ }
+
